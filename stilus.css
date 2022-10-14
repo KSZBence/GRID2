@@ -1,0 +1,72 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    background-color: rgb(33, 33, 54);
+}
+#container{
+    width: 50%;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+#menu{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    text-align: left;
+    width: 50%;
+}
+#menu li{
+    list-style-type: none;
+    font-weight: bold;
+    padding: 0.8em;
+    cursor: pointer;
+
+}
+#menu li:hover{
+    background-color: rgb(22, 22, 36);
+}
+
+#resz{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    
+}
+.tartalom h3{
+    text-align: center;
+}
+.tartalom img{
+    width: 150px;
+    
+}
+.tartalom{
+    text-align: center;
+}
+
+.tartalom ul{
+    text-align: left;
+}
+
+#kozepso{
+    border-left:solid 1px rgb(214, 42, 42);
+    border-right:solid 1px rgb(214, 42, 42);
+}
+
+@media only screen and (max-width: 600px){    
+
+    #menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: left;
+        width: 100%;
+    }
+    #container{
+        width: 100%;
+        margin: auto;
+    }
+    #resz{
+        display: grid;
+        grid-template-columns: 1fr; 
+        
+    }
+}
