@@ -2,6 +2,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: aliceblue;
     background-color: rgb(33, 33, 54);
+    
 }
 
 #container {
@@ -60,25 +61,77 @@ h1 {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-#folyamat li{
+    margin: auto;
     text-align: left;
-
+    margin-top: 10em;
 }
 
 
+#folyamat h1{
+    text-align: left;
+    margin: 0;
+    border-bottom: 1px solid red;
+}
 
 #folyamat img {
-    width: 90%;
-    float: right;
+    display: block;
+    margin: auto;
+    
 }
 
-#elso{
-    border-bottom: 1px red solid;
+#sales{
+    padding-top: 10em;
+    text-align: center;
 }
 
+#sales h1{
+    border-bottom: 1px solid red;
+    width: 8em;
+    margin: auto;
+}
 
+#sales p{
+    width: 40%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#kollegak{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20em;
+}
+
+#kollegak img{
+    width: 200px;
+    border-radius: 50%;
+    width: 50%;
+    padding-bottom: 2em; 
+}
+
+#kollegak h3{
+    font-weight: 100;
+    font-style: italic;
+}
+
+#kollegak button{
+    background-color: rgb(56, 133, 248);
+    color: white;
+    height: 2.5em;
+    width: 80%;
+    border: 0;
+    border-radius: 3%;
+    font-size: 0.5em;
+    padding: 2em;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    line-height: 0.5em;
+    text-transform: uppercase;
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -99,4 +152,26 @@ h1 {
         grid-template-columns: 1fr;
 
     }
+    #folyamat{
+        grid-template-columns: 1fr;
+        
+    }
+    
+    #folyamat{
+        grid-template-columns: 1fr;
+    }
+
+    #folyamat img{
+        max-width: 300px
+    }
+
+    #kollegak{
+        grid-template-columns: 1fr;
+    }
+
+    #kollegak button{
+        margin-bottom: 2em;
+        
+    }
+
 }
